@@ -20,6 +20,9 @@ module DevcampPortfolio
   class Application < Rails::Application
     config.eager_load_paths << "#{Rails.root}/lib"
     config.secret_key_base = "firmsone"
+    config.action_dispatch.default_headers = {
+    'X-Frame-Options' => 'ALLOWALL'
+    }
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins "*"
