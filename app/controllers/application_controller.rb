@@ -9,6 +9,6 @@ class ApplicationController < ActionController::Base
   private
 
     def allow_facebook_iframe
-      response.headers['X-Frame-Options'] = 'ALLOW-FROM https://apps.facebook.com'
+      response.headers['X-Frame-Options'] = 'ALLOW-FROM http://blogger.firmsone.com/'
     end
 end
