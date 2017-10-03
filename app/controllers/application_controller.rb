@@ -4,11 +4,5 @@ class ApplicationController < ActionController::Base
   include SetSource
   include CurrentUserConcern
   include DefaultPageContent
-  after_action :allow_facebook_iframe
-
-  private
-
-    def allow_facebook_iframe
-      response.headers['X-Frame-Options'] = 'ALLOW-FROM http://blogger.firmsone.com/'
-    end
+  
 end
