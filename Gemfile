@@ -47,6 +47,6 @@ gem 'redis', '~> 3.3', '>= 3.3.3'
 gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.1'
 gem 'rack-cors'
-ruby "2.4.0"
-
+gem "wysiwyg-rails"
 gem 'hirb'
+ruby '2.4.0'

@@ -5,10 +5,7 @@
   <%= render 'blog_breadcrumb' %>
 
   <div class="blog-body">
-    <% @blog.videos.each do |video| %>
-      <iframe width="560" height="315" src="<%= video.url %>" frameborder="0" allowfullscreen></iframe>
-    <% end %>
-    <%= markdown @blog.body %>
+    <%= raw @blog.body %>
   </div>
 
   <%= render 'comments/comment_form' %>
