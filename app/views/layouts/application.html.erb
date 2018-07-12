@@ -15,7 +15,16 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
+  <script id="fr-fek">
+    //Froala editor activation code
+    try{
+      (function (k){
+        localStorage.FEK = k;
+        t=document.getElementById('fr-fek');
+        t.parentNode.removeChild(t);
+      })('1ZSZGUSXYSMZb1JGZ==')
+    } catch(e){}
+  </script> 
   </head>
 
   <body>
