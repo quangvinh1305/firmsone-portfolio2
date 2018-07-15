@@ -50,3 +50,6 @@ gem 'rack-cors'
 gem "wysiwyg-rails"
 gem 'hirb'
 ruby '2.4.0'
+gem 'aws-sdk-rails'
+gem 'figaro'
+gem 'meta-tags'

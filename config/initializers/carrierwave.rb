@@ -1,6 +1,6 @@
 CarrierWave.configure do |config|
   config.storage    = :aws
-  config.aws_bucket = 'firmsone'
+  config.aws_bucket = 'faxeboc'
   config.aws_acl    = 'public-read'
   config.aws_authenticated_url_expiration = 60 * 60 * 24 * 7
   config.aws_attributes = {
@@ -9,8 +9,9 @@ CarrierWave.configure do |config|
   }
 
   config.aws_credentials = {
-    access_key_id:     'AKIAIDZXBMK2V4GFLK3A',
-    secret_access_key: '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',
-    region:            'us-west-2' # Required
+    access_key_id:     'AKIAIT75LEB25LLCZ7FQ',
+    secret_access_key: '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',
+    region:            'us-east-1' # Required
   }
 end
+
