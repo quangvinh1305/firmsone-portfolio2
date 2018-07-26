@@ -34,6 +34,6 @@ Rails.application.routes.draw do
   get '/uploads/:name' => 'froala#access_file', :as => :froala_upload_access_file, :name => /.*/
   get '/load_images' => 'froala#load_images', :as => :froala_load_images
 
-  get '/' => 'froala#index', :as => :root
+  # get '/' => 'froala#index', :as => :root
   root to: 'pages#home'
 end
